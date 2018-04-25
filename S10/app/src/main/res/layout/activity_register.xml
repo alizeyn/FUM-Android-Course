@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ir.alizeyn.s10.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="first name"
+            android:inputType="text" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="0dp" />
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="last name"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="16dp"
+        android:text="Gender : " />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:text="Man" />
+
+        <RadioButton
+            android:id="@+id/rbWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:text="Woman" />
+
+        <RadioButton
+            android:id="@+id/rbOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other" />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:onClick="register"
+        android:text="done" />
+
+</LinearLayout>
