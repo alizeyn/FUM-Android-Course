@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ir.alizeyn.s13.RealJobAcitivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/actionBarColor"
+        android:elevation="8dp">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_keyboard_backspace"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:tint="@color/iconColor"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:onClick="back"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اپلیکیشن من"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:hint="enter the link here"
+            android:maxLines="3"/>
+
+        <Button
+            android:id="@+id/bDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="start Download"
+            android:onClick="download"
+            android:layout_gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="36dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressTint="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/tvDlFileDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
